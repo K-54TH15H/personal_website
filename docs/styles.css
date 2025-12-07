@@ -24,8 +24,8 @@ body
 {
 	list-style-type: none;
 	padding: 10px;
-	float: right;
-
+	float: right; /* Float towards right end of the parent container */
+		
 	display: inline-block;	
 }
 
@@ -40,6 +40,24 @@ body
 	border: 3px solid black;
 	color: cyan;
 	padding: 10px;
+	margin-right: 10px;
 
 	display: inline;
+}
+
+/*
+ * Styles on navele on hover
+ */
+.navele:hover
+{
+	background-color: cyan;
+	color: black;
+}
+
+/*
+ * Styles for anchors on navbar
+ */
+.navanc
+{
+	text-decoration: none;
 }
