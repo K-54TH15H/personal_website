@@ -3,7 +3,7 @@
  */
 body 
 {
-	background-color: #e1e3c5; /* Background color of the entire body of the web-page */
+	background-color: #5e5e5d; /* Background color of the entire body of the web-page */
 }
 
 /*
@@ -13,17 +13,19 @@ body
 {
 	font-family: monospace; /* Default Font Family Monospace in family */
 	font-style: bold; /* Italic font style */
-
+	color: cyan;
+	
 	display: inline;
 }
 
 /*
  * Styles for navbar list
  */
-#navbar
+#navul
 {
 	list-style-type: none;
-	padding: 10px;
+	padding: 0px;
+	margin: 0px;
 	float: right; /* Float towards right end of the parent container */
 		
 	display: inline-block;	
@@ -60,4 +62,32 @@ body
 .navanc
 {
 	text-decoration: none;
+}
+
+/*
+ * Styles addressing the entire navbar
+ */
+#navbar
+{
+	margin-top: 1.5%;
+}
+
+/*
+ * Styles for image block
+ */
+#img_block
+{
+	width: 369px;
+	height: 369px;
+}
+
+/*
+ * Styles for img_section
+ */
+.img_div
+{
+	margin-top : 5%;
+	margin-left: 15%;
+
+	display:inline-block;
 }
