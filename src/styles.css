@@ -1,0 +1,45 @@
+/*
+ * Styles for body section
+ */
+body 
+{
+	background-color: #e1e3c5; /* Background color of the entire body of the web-page */
+}
+
+/*
+ * Styles for name element
+ */
+#name
+{
+	font-family: monospace; /* Default Font Family Monospace in family */
+	font-style: bold; /* Italic font style */
+
+	display: inline;
+}
+
+/*
+ * Styles for navbar list
+ */
+#navbar
+{
+	list-style-type: none;
+	padding: 10px;
+	float: right;
+
+	display: inline-block;	
+}
+
+/*
+ * Styles for each element in the navbar list
+ * grouped under class navele
+ */
+.navele
+{
+	background-color: #44434d;
+	text-align: center;
+	border: 3px solid black;
+	color: cyan;
+	padding: 10px;
+
+	display: inline;
+}
