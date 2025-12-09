@@ -89,5 +89,31 @@ body
 	margin-top : 5%;
 	margin-left: 15%;
 
-	display:inline-block;
+	display: flex;
+	flex-direction: row;
+}
+
+/*
+ * Styles for textblock
+ */
+.text
+{
+	margin-left: 2vw;
+	margin-top: 8%;
+	margin-right: 8vw;
+
+	float: right;
+	display: inline-block;
+}
+/*
+ * Styles for contact block
+ */
+#contact_block
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	margin-top: 10vh;
+
 }
