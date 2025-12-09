@@ -3,7 +3,7 @@
  */
 body 
 {
-	background-color: #5e5e5d; /* Background color of the entire body of the web-page */
+	background-color: #ebebeb; /* Background color of the entire body of the web-page */
 }
 
 /*
@@ -13,7 +13,7 @@ body
 {
 	font-family: monospace; /* Default Font Family Monospace in family */
 	font-style: bold; /* Italic font style */
-	color: cyan;
+	color: black;
 	
 	display: inline;
 }
@@ -37,10 +37,9 @@ body
  */
 .navele
 {
-	background-color: #44434d;
 	text-align: center;
 	border: 3px solid black;
-	color: cyan;
+	color: black;
 	padding: 10px;
 	margin-right: 10px;
 
@@ -52,8 +51,8 @@ body
  */
 .navele:hover
 {
-	background-color: cyan;
-	color: black;
+	background-color: black;
+	color: #ebebeb;
 }
 
 /*
@@ -79,6 +78,7 @@ body
 {
 	width: 369px;
 	height: 369px;
+	border: solid 3px black;
 }
 
 /*
