@@ -127,15 +127,27 @@ body
 }
 
 /*
+ * Disabling Side bar by default on Monitor sized devices
+ */
+#sidebar
+{
+	display: none;
+}
+
+/*
  * Media Query for Screen Size < 600 px (Mobile Phones)
  */
 @media(max-width: 780px)
 {
-	#navul
+	#navul .navele:not(#sidebar)
 	{
-		display:none;
+		display: none;	
 	}
-	
+	#sidebar
+	{
+		display: inline-block;
+	}
+
 	.img_div
 	{
 		flex-direction: column;
