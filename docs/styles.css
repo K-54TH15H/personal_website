@@ -12,7 +12,7 @@ body
 #name
 {
 	font-family: monospace; /* Default Font Family Monospace in family */
-	font-style: bold; /* Italic font style */
+	font-weight: bold; /* Italic font style */
 	color: black;
 	
 	display: inline;
@@ -122,11 +122,24 @@ body
  */
 @media(max-width: 780px)
 {
+	#navbar
+	{
+		display:none;
+	}
+
 	.img_div
 	{
 		flex-direction: column;
-	}
+		align-items: center;
 
+		margin-top: 5vh;
+	}
+	
+	#img_block
+	{
+		width: 90%;
+		height: auto;
+	}
 	.text
 	{
 		display: block;
@@ -134,5 +147,21 @@ body
 		margin-left: auto;
 		margin-right: 10vw;
 		margin-top: 5vh;
+	}
+
+	#contact_block span
+	{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+	}
+	#contact_block
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		gap: 15px;
 	}
 }
