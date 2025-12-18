@@ -122,11 +122,11 @@ body
  */
 @media(max-width: 780px)
 {
-	#navbar
+	#navul
 	{
 		display:none;
 	}
-
+	
 	.img_div
 	{
 		flex-direction: column;
