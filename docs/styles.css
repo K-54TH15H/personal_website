@@ -4,7 +4,8 @@
 body 
 {
 	background-color: #ebebeb; /* Background color of the entire body of the web-page */
-
+	margin: 0;
+	padding: 0;
 	font-size: clamp(14px, 1.2vw, 18px);
 }
 
@@ -121,13 +122,20 @@ body
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	
-	margin-top: 10vh;
 
+	margin-top: 7vh;
 }
 
 /*
- * Disabling Side bar by default on Monitor sized devices
+ * Disabling Side ico by default on Monitor sized devices
+ */
+#sideico
+{
+	display: none;
+}
+
+/*
+ * Disabling Sidebar
  */
 #sidebar
 {
@@ -139,11 +147,50 @@ body
  */
 @media(max-width: 780px)
 {
-	#navul .navele:not(#sidebar)
+	#sidebar
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 250px;
+		z-index: 999;
+		background-color: #ebebeb;
+		display: none;	
+		flex-direction: column;
+		gap: 15px;
+		border: 1px solid black;
+
+		text-align: center;
+	}
+	
+	.sideanc
+	{
+		width: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+		text-decoration: none;
+		padding: 10px;
+		
+		border-top: 2px solid black;
+		color: black;	
+	}
+
+	.sideanc:hover
+	{
+		background-color: black;
+		color: white;
+	}
+
+	#navul .navele:not(#sideico)
 	{
 		display: none;	
 	}
-	#sidebar
+	
+	#sideico
 	{
 		display: inline-block;
 	}
@@ -163,9 +210,11 @@ body
 		width: 75%;
 		height: auto;
 	}
+
 	.text
 	{
 		display: block;
+		width: 85%;
 
 		margin-left: auto;
 		margin-right: auto;
@@ -179,6 +228,7 @@ body
 		align-items: center;
 		width: auto;
 	}
+	
 	#contact_block
 	{
 		display: flex;

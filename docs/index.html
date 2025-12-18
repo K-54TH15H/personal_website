@@ -8,8 +8,9 @@
 		<!-- Viewport meta tag -->
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Linking styles.css to home.html -->
+		<!-- Linking styles.css to html -->
 		<link rel = "stylesheet" href = "styles.css">
+
 	</head>
 	<body>
 		<!-- Navigation bar -->
@@ -27,7 +28,16 @@
 				<a href = "about.html" class = "navanc"> <li class = "navele"> About </li> </a>
 				<a href = "projects.html" class = "navanc"> <li class = "navele"> Projects </li> </a>
 				<a href = "contact.html" class = "navanc"> <li class = "navele"> Contact </li> </a>
-				<a href "sidebar" class = "navanc"><li id = "sidebar" class = "navele"> [+] </li></a>
+
+				<a class = "navanc"><li id = "sideico" class = "navele"> [+] </li></a>
+			</ul>
+			
+			<!-- Side Bar -->
+			<ul id = sidebar>
+				<a href = "index.html" class = "sideanc"> <li class = "sideele"> Home </li> </a>
+				<a href = "about.html" class = "sideanc"> <li class = "sideele"> About </li> </a>
+				<a href = "projects.html" class = "sideanc"> <li class = "sideele"> Projects </li> </a>
+				<a href = "contact.html" class = "sideanc"> <li class = "sideele"> Contact </li> </a>
 			</ul>
 		</nav>
 	
@@ -49,5 +59,9 @@
 			<span>(=) B.Tech CSE @ IIT PKD </span> 
 			<span>(=) +91 8248924647 </span>
 		</div>
+
+
+		<!-- Linking script.js to html-->
+		<script src = "script.js"></script>
 	</body>
 </html>
